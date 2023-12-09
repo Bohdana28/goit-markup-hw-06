@@ -388,3 +388,99 @@ screen and (min-device-pixel-raito: 2) {
     }
 }
 /*=========/EFFECTIVE DESKTOP STYLES========*/
+
+/*============ABOUT MOBILE STYLES========*/
+.icon-conteiner-about {
+    display: none;
+}
+.title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.title-sec-about {
+    width: 288px;
+    margin-bottom: 8px;
+    align-self: stretch;
+}
+.about {
+    color: #434455;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+.prg-about {
+    width: 288px;
+    margin-bottom: 72px;
+    align-self: stretch;
+}
+/*============/ABOUT MOBILE STYLES========*/
+
+/*===========ABOUT TABLET STYLES========*/
+@media screen and (min-width: 768px) {
+    .list-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about-item {
+        width: calc((100%-72px)/4);
+    }
+    .title-sec-about {
+        width: 264px;
+        text-align: start;
+    }
+    .prg-about {
+        width: 356px;
+    }
+}
+/*===========ABOUT /TABLET STYLES========*/
+
+/*===========ABOUT DESKTOP STYLES=======*/
+@media screen and (min-width: 1158px) {
+    .icon-conteiner-about {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .list-about {
+        flex-wrap: nowrap;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .title-sec-about {
+        width: 264px;
+    }
+    .about {    
+    font-weight: 400;
+    }
+    .prg-about {
+        width: 264px;
+    }
+    .icon-conteiner-about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 112px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+        background: var(--CLOUD, #F4F4FD);
+        margin-bottom: 8px;
+    }
+    .icon-section-about {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+/*===========ABOUT /DESKTOP STYLES=======*/
