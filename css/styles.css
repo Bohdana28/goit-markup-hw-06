@@ -393,7 +393,10 @@ screen and (min-device-pixel-raito: 2) {
 .icon-conteiner-about {
     display: none;
 }
-.title {
+.title-sec-about {
+    width: 288px;
+    margin-bottom: 8px;
+    align-self: stretch;
     color: #2E2F42;
     text-align: center;
     font-size: 36px;
@@ -401,11 +404,6 @@ screen and (min-device-pixel-raito: 2) {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-}
-.title-sec-about {
-    width: 288px;
-    margin-bottom: 8px;
-    align-self: stretch;
 }
 .about {
     color: #434455;
@@ -450,13 +448,11 @@ letter-spacing: 0.02em;
     .list-about {
         flex-wrap: nowrap;
     }
-    .title {
+    .title-sec-about {
+        width: 264px;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
-    }
-    .title-sec-about {
-        width: 264px;
     }
     .about {    
     font-weight: 400;
@@ -483,4 +479,91 @@ letter-spacing: 0.02em;
         margin-bottom: 24px;
     }
 }
-/*===========ABOUT /DESKTOP STYLES=======*/
+/*===========/ABOUT DESKTOP STYLES=======*/
+
+
+/*===========OUR TEAM MOBILE STYLES======*/
+.our-team {
+    background-color: #F4F4FD;
+}
+.two-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.our-team-title {
+     margin-bottom: 72px;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-item {
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    margin-bottom: 72px;
+    max-width: 264px;
+}
+.name-worker {
+    padding: 32px 0;
+}
+.title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.team-title {
+    margin-bottom: 8px;
+    text-align: center;
+}
+.prg-our-team {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.02em; 
+}
+.masseger-icon {
+    display: flex;
+    gap: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 8px;
+    justify-content: center;
+}
+.masseger-item {
+    width: 40px;
+    height: 40px;
+}
+.masseger-item-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.messeger-media-icon {
+    margin: 12px;
+    fill: #F4F4FD;
+}
+/*===========/OUR TEAM MOBILE STYLES======*/
+
+/*==========OUR TEAAM TABLET STYLES=======*/
+
+/*==========/OUR TEAAM TABLET STYLES=======*/
+
+/*==========OUR TEAM DESKTOP STYLES=======*/
+
+/*==========/OUR TEAM DESKTOP STYLES=======*/
