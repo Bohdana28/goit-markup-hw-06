@@ -854,3 +854,233 @@ letter-spacing: 0.02em;
     }
 }
 /*========FOOTER DESKTOP STYLES=======*/
+
+/*=========BACKDROP AND MODAL WINDOW MOBILE STYLES======*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 72px 16px 24px 16px;
+    transform: translate(-50%, -50%);
+    width: 288px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    fill: #2E2F42;
+}
+.review-form-description {
+    width: 256px;
+    color: #2E2F42;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+.review-form-field-wraper {
+    margin-bottom: 8px;
+}
+.review-form-field-wraper-two {
+    margin-bottom: 16px;
+}
+.review-form-field-label {
+    display: block;
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+.review-form-input-wrapper {
+    position: relative;
+}
+.review-form-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    padding-left: 38px;
+    outline: 0px solid transparent;
+}
+.review-form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2E2F42;
+    stroke: none;
+}
+.review-form-comment {
+    width: 100%;
+    height: 120px;
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    padding: 8px 16px;
+    resize: none;
+    outline: 0px solid transparent;
+}
+.review-form-comment::placeholder {
+    color: rgba(46, 47, 66, 0.40); 
+}
+
+.review-form-checkbox-label {
+    color: #8E8F99;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 0.04em;
+display: flex;
+align-items: center;
+}
+.privacy-policy {
+    color: #4D5AE5;
+    
+}
+.review-form-checkbox-wrapper{
+    margin-bottom: 24px;
+}
+
+.review-form-own-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-checkbox:checked + .review-form-checkbox-label > .review-form-own-checkbox {
+    background-color: #404BBF;
+    border: #404BBF;
+    fill: #F4F4FD;
+}
+.review-form-own-checkbox-icon {
+    fill: #f4f4fd;
+    opacity: 0;
+}
+.review-form-checkbox:checked + .review-form-checkbox-label .review-form-own-checkbox-icon {
+    opacity: 1;
+    fill: #F4F4FD;
+}
+.review-submit-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*=========/BACKDROP AND MODAL WINDOW MOBILE STYLES======*/
+
+/*========BACKDROP AND MODAL WINDOW TABLET STYLES=======*/
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
+    .review-form-description {
+        width: 360px;
+    }
+}
+/*========/BACKDROP AND MODAL WINDOW TABLET STYLES=======*/
+
+/*=======BACKDROP AND MODAL WINDOW DESKTOP STYLES======*/
+@media screen and (min-width: 1158px) {
+    .modal-close-btn {
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .modal-close-btn-icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .modal-close-btn:hover, .modal-close-btn:focus {
+        background-color: #404BBF;
+        border: none;
+        fill: #ffffff;
+    }
+    .review-form-input {
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .review-form-input:focus {
+        border-color: #4D5AE5;
+    }
+    .review-form-input-icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .review-form-input:focus + .review-form-input-icon {
+        fill: #4D5AE5;
+    }
+    .review-form-comment {
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .review-form-comment:focus {
+        border-color: #4D5AE5; 
+    }
+    .review-form-checkbox:focus + .review-form-checkbox-label > .review-form-own-checkbox {
+        outline: 2px solid rgba(0, 0, 255, 0.5);
+    }
+    .review-submit-btn {
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .review-submit-btn:hover, .review-submit-btn:focus {
+        background-color: #404bbf;
+    }
+}
+/*=======/BACKDROP AND MODAL WINDOW DESKTOP STYLES======*/
