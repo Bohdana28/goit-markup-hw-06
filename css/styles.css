@@ -62,6 +62,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .logo {
     color:  #4D5AE5;
@@ -120,24 +121,25 @@ body {
     } 
     .mobile-menu-navigation {
         padding-top: 72px;
-        padding-bottom: 84px;
-        max-width: 151px;
     }
     .mobile-menu-item {
+        margin-bottom: 40px; 
+    }
+    .mobile-menu-link {
         color: #2E2F42;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        padding-bottom: 40px;
-        
     }
     .mobile-studio {
         color: #404BBF;
     }
+    
     .mobile-address {
         font-style: normal;
+        margin-top: 168px;
     }
     .mobile-data-item {
         padding-bottom: 24px;
@@ -157,11 +159,12 @@ body {
         justify-content: center;
         gap: 40px;
         padding-top: 8px;
+        margin-bottom: 40px;
     }
     .mobile-menu-social-item {
         width: 40px;
         height: 40px;
-        
+        margin-top: 24px;
     }
     .mobile-menu-social-link {
         width: 100%;
@@ -171,7 +174,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 24px;
+        
     }
     .mobile-menu-media {
         fill: #F4F4FD;
@@ -306,7 +309,7 @@ screen and (min-device-pixel-raito: 2) {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    max-width: 288px;
+    max-width: 165px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
@@ -355,6 +358,7 @@ screen and (min-device-pixel-raito: 2) {
         line-height: 1.07;
         max-width: 496px;
         margin-bottom: 36px;
+        text-transform: none;
     }
    
 }
